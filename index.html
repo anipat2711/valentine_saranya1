@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Saranya ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 400px;
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #ff4e50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff1e40;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>❤️ Hello Beautiful ❤️</h2>
+  <p>In which cafe did we have our first date?</p>
+  <input type="text" id="password" placeholder="Enter answer">
+  <br>
+  <button onclick="checkPassword()">Enter</button>
+  <p id="error" style="color:red;"></p>
+</div>
+
+<script>
+function checkPassword() {
+  var input = document.getElementById("password").value.toLowerCase();
+  var correct = "cafecorner"; // <-- CHANGE THIS
+
+  if(input === correct) {
+    window.location.href = "proposal.html";
+  } else {
+    document.getElementById("error").innerText = "Hmm… try again my love ❤️";
+  }
+}
+</script>
+
+</body>
+</html>
